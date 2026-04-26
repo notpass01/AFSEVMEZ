@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(list\\(d.keys\\(\\)\\)[:20]\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Add Gates of Olympus slot game assets *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m 'Update .gitignore to exclude database and cache files *)",
+      "Bash(git push *)"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #D4AF37;
+  --gold-light: #F0C842;
+  --bg: #0D0D0D;
+  --card: #1A1A2E;
+  --border: #2A2A4A;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37, #F0C842, #A8882A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #D4AF37, #F0C842);
+  color: #0D0D0D;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 12px 28px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.btn-gold:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.btn-gold:active { transform: translateY(0); }
+.btn-gold:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+.roulette-number-red   { background: #C0392B; }
+.roulette-number-black { background: #1a1a1a; }
+.roulette-number-green { background: #27AE60; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
